@@ -1,0 +1,59 @@
+body{
+  background: #3cda8b;
+}
+li{
+  display: none;
+}
+.container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1fr);
+  grid-gap: 5px;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+header{
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "numberUPP search numberTest";
+  justify-items: center;
+}
+.numberUPP{
+  grid-area: numberUPP;
+}
+.numberUPP:hover li{
+  display: block;
+  position: relative;
+}
+.search{
+  grid-area: search;
+}
+.numberTest{
+  grid-area: numberTest;
+}
+.numberTest:hover li{
+  display: block;
+  position: relative;
+}
+content{
+  display: grid;;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "one_coloumn two_coloumn three_coloumn";
+  justify-items: center;
+  align-items: center;
+}
+button{
+  display: block;
+}
+footer > #textarea{
+  margin-left: 10%;
+  width: 80%;
+  height: 150px;
+}
