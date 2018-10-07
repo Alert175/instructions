@@ -2,79 +2,78 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="image/logo.jpg" type="logo/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>Инструкции</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="numberUPP">
-          <ul>УПП
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+        <div class="numberUPP" id="nav">
+          <ul>&nbsp&nbspУПП&nbsp&nbsp&nbsp
+            <li><a href=""></a>41688</li>
+            <li><a href=""></a>2</li>
+            <li><a href=""></a>3</li>
+            <li><a href=""></a>4</li>
+            <li><a href=""></a>5</li>
           </ul>
         </div>
         <div class="search">
-          <input type="text" name="" value="" placeholder="Я помогу найти">
+          <input type="text" id="_Search" value="" onkeydown="SearchElement(this)" placeholder="Я помогу найти">
         </div>
-        <div class="numberTest">
+        <div class="numberTest" id="nav">
           <ul>Тестовые
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
+            <li><a href=""></a>6</li>
+            <li><a href=""></a>7</li>
+            <li><a href=""></a>8</li>
+            <li><a href=""></a>9</li>
+            <li><a href=""></a>10</li>
           </ul>
         </div>
       </header>
 
       <content>
         <div class="one_coloumn">
-          <button id="0">example</button>
-          <button id="1">example</button>
-          <button id="2">example</button>
-          <button id="3">example</button>
-          <button id="4">example</button>
-          <button id="5">example</button>
-          <button id="6">example</button>
-          <button id="7">example</button>
-          <button id="8">example</button>
-          <button id="9">example</button>
+          <button id="0" onclick="func(this)">example</button>
+          <button id="1" onclick="func(this)">example</button>
+          <button id="2" onclick="func(this)">example</button>
+          <button id="3" onclick="func(this)">example</button>
+          <button id="4" onclick="func(this)">example</button>
+          <button id="5" onclick="func(this)">example</button>
+          <button id="6" onclick="func(this)">example</button>
+          <button id="7" onclick="func(this)">example</button>
+          <button id="8" onclick="func(this)">example</button>
+          <button id="9" onclick="func(this)">example</button>
         </div>
         <div class="two_coloumn">
-          <button id="10">example</button>
-          <button id="11">example</button>
-          <button id="12">example</button>
-          <button id="13">example</button>
-          <button id="14">example</button>
-          <button id="15">example</button>
-          <button id="16">example</button>
-          <button id="17">example</button>
-          <button id="18">example</button>
-          <button id="19">example</button>
+          <button id="10" onclick="func(this)">example</button>
+          <button id="11" onclick="func(this)">example</button>
+          <button id="12" onclick="func(this)">example</button>
+          <button id="13" onclick="func(this)">example</button>
+          <button id="14" onclick="func(this)">example</button>
+          <button id="15" onclick="func(this)">example</button>
+          <button id="16" onclick="func(this)">example</button>
+          <button id="17" onclick="func(this)">example</button>
+          <button id="18" onclick="func(this)">example</button>
+          <button id="19" onclick="func(this)">example</button>
         </div>
         <div class="three_coloumn">
-          <button id="20">example</button>
-          <button id="21">example</button>
-          <button id="22">example</button>
-          <button id="23">example</button>
-          <button id="24">example</button>
-          <button id="25">example</button>
-          <button id="26">example</button>
-          <button id="27">example</button>
-          <button id="28">example</button>
-          <button id="29">example</button>
+          <button id="20" onclick="func(this)">example</button>
+          <button id="21" onclick="func(this)">example</button>
+          <button id="22" onclick="func(this)">example</button>
+          <button id="23" onclick="func(this)">example</button>
+          <button id="24" onclick="func(this)">example</button>
+          <button id="25" onclick="func(this)">example</button>
+          <button id="26" onclick="func(this)">example</button>
+          <button id="27" onclick="func(this)">example</button>
+          <button id="28" onclick="func(this)">example</button>
+          <button id="29" onclick="func(this)">example</button>
         </div>
 
       </content>
 
       <footer>
         <textarea id="textarea"></textarea>
-        <div id="copy" onclick="Copy()">
-          asdasdas
         </div>
       </footer>
     </div>

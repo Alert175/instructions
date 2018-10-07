@@ -1,14 +1,16 @@
 body{
-  background: #3cda8b;
-}
-li{
-  display: none;
+  /* background-image: linear-gradient(45deg, #65feb0, #63E2FF); */
+  background-image: url(image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 .container{
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3 1fr);
+  grid-template-rows: 70px 5fr 3fr;
   grid-gap: 5px;
   grid-template-areas:
     "header"
@@ -22,24 +24,43 @@ header{
   grid-template-areas:
     "numberUPP search numberTest";
   justify-items: center;
+  background: #3c376e;
+  color: #c6c5af;
+  font-size: 20px;
+  font-family: sans-serif;
 }
-.numberUPP{
-  grid-area: numberUPP;
+#_Search{
+  height: 40px;
+  text-align: center;
+  background: #cfdcee;
+  border: 3px solid #3c376e;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
 }
-.numberUPP:hover li{
-  display: block;
+#nav{
+    width: 100px;
+}
+#nav li{
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  visibility: hidden;
+  background: #3c376e;
+}
+#nav ul:hover li{
+  visibility: visible;
   position: relative;
+  padding: 5px;
+  right: 15px;
 }
-.search{
-  grid-area: search;
+li:hover{
+  font-size: 25px;
+  color: #f5f3f2;
 }
-.numberTest{
-  grid-area: numberTest;
-}
-.numberTest:hover li{
-  display: block;
-  position: relative;
-}
+
 content{
   display: grid;;
   grid-template-columns: repeat(3 1fr);
@@ -51,9 +72,30 @@ content{
 }
 button{
   display: block;
+  width: 100px;
+  height: 35px;
+  margin: 5px;
+  background: #ddf5ff;
+  color: #2f4b5d;
+  border: 2px solid #2f4b5d;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  transition: font-size, 1s;
+}
+button:hover{
+  background: #ffffff;
+  font-size: 18px;
 }
 footer > #textarea{
   margin-left: 10%;
   width: 80%;
-  height: 150px;
+  height: 80%;
+  background: #cbeaec;
+  color: #4e4644;
+  border: 3px solid #2f4b5d;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: sans-serif;
 }
